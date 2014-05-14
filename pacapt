@@ -148,6 +148,8 @@ dpkg_Q() {
 
 dpkg_Qi() {
   dpkg-query -s "$@"
+  echo
+  apt-cache policy "$@"
 }
 
 dpkg_Ql() {
